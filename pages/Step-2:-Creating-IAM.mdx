@@ -1,0 +1,33 @@
+## Step:2 -Identity and Access Management(**IAM**)
+Before Creating IAM Role we look back to create a Policy for Creating Role.<br></br>
+**To create a policy for an AWS role, you need to define and control which principals can assume the role based on the specified conditions.**
+And after that we need to Add new Role and create a Policy For it. The Steps are listed Below.
+<br></br>
+## **Create Policy**
+1. Search For <u><a href="https://aws.amazon.com/api-gateway/" style={{color:"light-blue"}}> Identity and Access Management(IAM)</a></u> and Navigate to the Dashboard Page
+2. On the Dashboard Left Panel Find For **Policies** under **Access Management** and Click <button style={{color:"black","background-color": "orange",width:110}}>**Create Policy**</button>
+3. Firstly Choose the **S3 Service** then search and enter **PutObject** under Action Allowed
+4. Under Resources select specific and click <u><a href="#" style={{color:"blue"}}>Add ARNS</a></u>.
+5. On Popup will open after clicking Add ARNS then enter the bucket name that you created and for object name click the tick box of **Any Object Name**
+6. Then Click Add Arns and navigate to next page 
+7. Enter Policy name and create policy
+<br></br>
+**That's all the Policy Will be created.** Next we have to Create Role.
+<br></br>
+## **Create Role**
+
+1. On the Left Navigation Panel, Select Role and move to the page.
+2. Click <button style={{color:"black","background-color": "orange",width:110}}>**Create Role**</button> and now we move to create Role and append above created Policy
+3. Leave all the field except **Use case** field. Under the field **Service or use case** select **API Gateway**
+4. And then Click <button style={{color:"black","background-color": "orange",width:50}}>**Next**</button>. Leave the **Add Permission** page, we append policy for the role Later.
+5. Enter Role name and click <button style={{color:"black","background-color": "orange",width:110}}>**Create Role**</button>
+<br></br>
+Role has been created now we are going to append policy for the created Role
+
+
+
+1. Go To **Roles** Dashboard and find role by entering the role name that you given while creating. And Open the Role by selecting the role name
+2. Under **Permission** Tab. Choose **Create Inline Policy** from the **Add Permission** Dropdown Button. *It means you Create a Policy For the role
+3. Select **Attach Policy** and find the policy that you created before and select on the tick box and click <button style={{color:"black","background-color": "orange",width:130}}>**Add Permission**</button>
+<br></br>
+Thats all the policy,role are created and Mapped Together, Next we move to create API Gateway.
