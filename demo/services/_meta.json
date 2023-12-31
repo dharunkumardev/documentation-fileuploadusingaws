@@ -1,0 +1,6 @@
+{
+    "api-gateway":"API Gateway",
+    "cloudfront":"Cloudfront",
+    "iam":"IAM",
+    "s3-bucket":"S3 Bucket"
+}

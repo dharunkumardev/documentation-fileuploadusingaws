@@ -1,0 +1,11 @@
+{
+    "index":"Dashboard",
+    "about":"About",
+    "overview":"Overview",
+    "services":"services",
+    "creating-s3-bucket":"Step 1: Creating S3 Bucket",
+    "creating-iam":"Step 2: Creating IAM Role",
+    "configuring-api-gateway":"Step 3: Configuring API Gateway",
+    "integrating-cloudfront-to-s3":"Step 4: Integrating Cloudfront To S3",
+    "test-the-api-and-use":"Step 5: Test The API And Use"
+}
