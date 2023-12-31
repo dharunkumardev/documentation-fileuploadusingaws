@@ -1,1 +1,41 @@
 ## Step:4 -Integrating Cloudfront to S3
+
+Under the Integration of Cloudfront with S3, there is two steps have beet included
+
+1. Create Origin Access
+2. Creating Distribution
+
+- Navitage to the **Cloudfront** dashboard and firstly create Origin Access Identities, for that select **Origin Access** from left Side panel under **Security** Section
+
+### Create Origin Access
+
+On the Left Panel Select Origin Access Under Security Division
+
+- Click <button style={{color:"black","background-color": "orange",width:170, height:30}}>**Create control setting**</button> and Enter the **Name** and **Description** Field
+- Check whether the **Origin Type** is **S3** or whatever
+- And Click <button style={{color:"black","background-color": "orange",width:70}}>**Create**</button>
+- Now Origin Access Setting Has Been Created
+  Next Move Forward to create Distribution
+
+### Create Distribution
+
+- Get Back to Distribution dashboard and click <button style={{color:"black","background-color": "orange",width:250, height:30}}>**Create a CloudFront distribution** </button>
+  Follow the Form that i entered below
+
+* Origin domain: Click the input field and it shows a url under **Amazon S3** ,it means a bucket you already Created. Choose that
+  > Leave the Origin path and Check the **Name** field is automatically filled after Choosing **Origin Domain**
+
+* Under origin Access Choose **Legacy access identities** and Click **Create new OAI** button and check that the name that it automatically updated on that field then Choose **Create**
+* And Under **Bucket Policy** Choose **Yes, update the bucket policy**
+* Then Choose **Redirect HTTP to HTTPS** under **Viewer** Header **Viewer protocol policy** Point
+* Select any one of Protection based on your Purpose under **Web Application Firewall (WAF)**
+
+* Leave all the Point and Click <button style={{color:"black","background-color": "orange",width:180, height:30}}>**Create distribution** </button>
+>Thats All The CloudFront Distribution has been Created. Now we can use the url to Download or stream files
+
+Now the page will automatically Redirected to the created distribution info 
+
+**Copy the **Distribution domain Name** and wait for the **Last modified** Date & time will showing as Current Time**
+
+
+> **note :Navigate To the **S3** and Select The Created Bucket name and move to the **Permissions** tab, and all the way down to the bucket Policy is updated Like a JSON Format.From Here after you need to Serve Bucket Files Safely By Cloudfront URL**
