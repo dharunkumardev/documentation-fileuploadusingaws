@@ -1,0 +1,6 @@
+{
+  "api_gateway": "API GATEWAY",
+  "s3_bucket": "Simple Storage Service(S3)",
+  "iam": "Identity and Access Management(IAM)",
+  "cloudfront": "Cloudfront"
+}

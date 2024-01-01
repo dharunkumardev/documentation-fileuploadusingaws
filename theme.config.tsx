@@ -4,8 +4,7 @@ import heartLogo from "./assets/heart.webp";
 const config: DocsThemeConfig = {
   logo: (
     <span>
-      <b>KPR Info Solution</b> - Files Upload and Retrieve at Fast and Secure
-      Way Using AWS Services
+      <b>Files Upload and Retrieve at Fast and Secure Way Using AWS Services</b>
     </span>
   ),
   // project: {
