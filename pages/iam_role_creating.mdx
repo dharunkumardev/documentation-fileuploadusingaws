@@ -1,10 +1,12 @@
+import { Callout } from 'nextra/components'
+
 ## Step:2 -Identity and Access Management(**IAM**)
 Before Creating IAM Role we look back to create a Policy for Creating Role.<br></br>
 **To create a policy for an AWS role, you need to define and control which principals can assume the role based on the specified conditions.**
 And after that we need to Add new Role and create a Policy For it. The Steps are listed Below.
 <br></br>
 ## **Create Policy**
-1. Search For <u><a href="https://aws.amazon.com/api-gateway/" style={{color:"light-blue"}}> Identity and Access Management(IAM)</a></u> and Navigate to the Dashboard Page
+1. Search For <u>[Identity and Access Management(IAM)](https://aws.amazon.com/iam)</u> and Navigate to the Dashboard Page
 2. On the Dashboard Left Panel Find For **Policies** under **Access Management** and Click <button style={{color:"black","background-color": "orange",width:110}}>**Create Policy**</button>
 3. Firstly Choose the **S3 Service** then search and enter **PutObject** under Action Allowed
 4. Under Resources select specific and click <u><a href="#" style={{color:"blue"}}>Add ARNS</a></u>.
@@ -12,7 +14,18 @@ And after that we need to Add new Role and create a Policy For it. The Steps are
 6. Then Click Add Arns and navigate to next page 
 7. Enter Policy name and create policy
 <br></br>
+
+
+
+<Callout type="info" emoji="ℹ️">
 **That's all the Policy Will be created.** Next we have to Create Role.
+</Callout>
+
+
+
+
+
+
 <br></br>
 ## **Create Role**
 

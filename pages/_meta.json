@@ -1,1 +1,11 @@
-{}
+{
+  "index": "Home",
+  "about": "About",
+  "overview": "Overview",
+  "services": "Services Used",
+  "s3_bucket_creation": "Step 1: Creating S3 Bucket",
+  "iam_role_creating": "Step 2: Creating IAM Role",
+  "api_gateway_creation": "Step 3: Creating API Gateway",
+  "creating_cloudfront": "Step 4: Integrating S3 With Cloudfront",
+  "final_step": "Step 5: Test The API and Cloudfront Domain"
+}
